@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tri thức Book Store</title>
+    <!-- Link icon web -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/Tri thức (1).png" />
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Pagination -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Box icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Link grid -->
+    <link rel="stylesheet" href="/assets/css/grid.css" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="/assets/css/product.css" />
+    <!-- Link responsive header -->
+    <link rel="stylesheet" href="/assets/responsive/header.css" />
+  </head>
+  <body>
+    <body id="top">
+      <div class="loader"></div>
+      <div id="main" class="grid wide">
+        <!-- Header -->
+        <div id="header" class="modal">
+          <div class="header__element">
+            <div class="header__close js-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="header__logo">
+              <a href="">
+                <img src="/assets/img/Tri thức (1).png" alt="" />
+                <!-- Tri thức Book Store -->
+                <span>Tri thức Book Store</span>
+              </a>
+            </div>
+
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li>
+                  <a href="index.html"
+                    ><i class="fa-solid fa-house"></i>Giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-brands fa-servicestack"></i>Sản phẩm</a
+                  >
+                </li>
+                <li>
+                  <a href="pay.html"
+                    ><i class="fa-solid fa-bag-shopping"></i>Thanh toán</a
+                  >
+                </li>
+              </ul>
+
+              <div class="header__nav-log">
+                <a href="login.html"
+                  >Đăng nhập
+                  <i class="fa-solid fa-person-walking-arrow-loop-left"></i
+                ></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Header for PC low, Tablet and Moblie -->
+        <div id="header__responsive">
+          <div class="header__responsive-btn js-btn-navbar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="header__responsive-img">
+            <img src="/assets/img/Tri thức (1).png" alt="" />
+            <span>Tri thức Book Store</span>
+          </div>
+          <button class="header__responsive-package">
+            <a href="pay.html" style="color: black">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="product_sp"></span>
+            </a>
+          </button>
+        </div>
+
+        <!-- Content -->
+        <div id="content" class="grid">
+          <div id="category" class="js-nav">
+            <h1>Danh mục sản phẩm</h1>
+            <hr style="width: 40%; margin: 12px 0" />
+            <p class="category__phara">
+              Khu vườn ngôn từ
+            </p>
+
+            <form action="">
+              <input
+                type="text"
+                placeholder="Tìm sản phẩm"
+                id="search__input"
+              />
+            </form>
+
+            <div
+              id="notice__product"
+              style="
+                text-align: center;
+                color: lightskyblue;
+                font-size: 2.5rem;
+                margin-top: 60px;
+                display: none;
+              "
+            >
+              Không tìm thấy
+            </div>
+            <div class="category__container grid">
+              <div
+                class="category__wrap row"
+                id="product"
+                 style="display: none" 
+              ></div>
+
+              <div class="pagination">
+                <!-- <li class="page-item previous-page disable">
+                  <a href="#" class="page-link">Trước</a>
+                </li>
+                <li class="page-item current-page active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+                <li class="page-item current-page"><a href="#s="page-lin" clask">5</a></li>
+                <li class="page-item current-page"><a href="#" class="page-link">6</a></li>
+                <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+                <li class="page-item current-page"><a href="#" class="page-link">10</a></li>
+                <li class="page-item next-page"><a href="#" class="page-link">Tiếp</a></li> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="footer">
+            <div class="footer__col1">
+              <div class="footer__fhead">
+                <i class="fa-solid fa-cat"></i>
+                <span>bookstore</span>
+              </div>
+              <div class="footer__connect">
+                <i class="fa-brands fa-twitter"></i
+                ><i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <button>Liên lạc</button>
+            </div>
+            <div class="footer__col2">
+              <div class="footer__link">
+                <a href="#">Careers</a>
+                <a href="#">How it works</a>
+                <a href="#">Our mision</a>
+                <a href="#">Your impact</a>
+              </div>
+              <div class="footer__link">
+                <a href="#">FAQs</a>
+                <a href="#">Get the app</a>
+                <a href="#">Contact us</a>
+                <a href="#">Privacy policy</a>
+              </div>
+            </div>
+            <div class="footer__col3">
+              <h2>Ngôn từ ngọt ngào từ sách!</h2>
+              <p class="footer__makeby">Powered by <a href="#">sunshinebaby</a></p>
+              <div class="footer__info">
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrool to top -->
+      <div id="scrolltop">
+        <a href="#top" class="top-button">
+          <i class="fa-solid fa-arrow-up-long"></i>
+        </a>
+      </div>
+
+      <!-- Javascript scroll to top -->
+      <script>
+        const scrollTop = document.getElementById("scrolltop");
+        window.onload = () => {
+          scrollTop.style.visibility = "hidden";
+          scrollTop.style.opacity = 0;
+        };
+
+        window.onscroll = () => {
+          if (window.scrollY > 200) {
+            scrollTop.style.visibility = "visible";
+            scrollTop.style.opacity = 1;
+          } else {
+            scrollTop.style.visibility = "hidden";
+            scrollTop.style.opacity = 0;
+          }
+        };
+      </script>
+
+      <!-- Javascript navbar -->
+      <script>
+        const sections = document.querySelectorAll(".js-nav"),
+          navLinks = document.querySelectorAll(".header__nav-list li a");
+
+        const resetLinks = () =>
+          navLinks.forEach((link) => link.classList.remove("active"));
+
+        const handleScroll = () => {
+          const { pageYOffset } = window;
+          sections.forEach((section) => {
+            const { id, offsetTop, clientHeight } = section;
+            const offset = offsetTop - 1;
+
+            if (pageYOffset >= offset && pageYOffset < offset + clientHeight) {
+              resetLinks();
+              navLinks.forEach((link) => {
+                if (link.dataset.scroll == id) {
+                  link.classList.add("active");
+                }
+              });
+            }
+          });
+        };
+
+        document.addEventListener("scroll", handleScroll);
+      </script>
+
+      <!-- Javascript loader -->
+      <script>
+        window.addEventListener("load", () => {
+          const loader = document.querySelector(".loader");
+
+          loader.classList.add("loader--hidden");
+
+          loader.addEventListener("transitionend", () => {
+            document.body.removeChild(document.querySelector(".loader"));
+          });
+        });
+      </script>
+
+      <!-- Pagination -->
+      <script src="/assets/javascript/pagination.js"></script>
+
+      <!-- Search product -->
+      <script src="/assets/javascript/searchproduct.js"></script>
+      //
+
+      <!-- Header sticky -->
+      <script>
+        window.addEventListener("scroll", function () {
+          var header = this.document.querySelector("#header__responsive");
+          header.classList.toggle("sticky", this.window.scrollY > 0);
+        });
+      </script>
+
+      <!-- Javascript Header responsive navbar -->
+      <script src="/assets/javascript/navbar.js"></script>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <!-- Link icon web -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/Tri thức (1).png" />
+    <!-- ===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- Link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/login.css"/>
+  </head>
+  <body>
+    <div id="backhome">
+      <a href="index.html" class="return-button">
+        <i class="fa-solid fa-angles-left"></i>
+      </a>
+    </div>
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Đăng nhập</span>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" placeholder="Nhập email của bạn" required />
+              <i class="uil uil-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                class="password"
+                placeholder="Nhập mật khẩu"
+                required
+              />
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck" />
+                <label for="logCheck" class="text">Lưu mật khẩu</label>
+              </div>
+
+              <a href="#" class="text">Quên mật khẩu?</a>
+            </div>
+            <div class="input-field button">
+              <input type="submit" value="Đăng nhập" />
+            </div>
+          </form>
+          <div class="login-signup">
+            <span class="text"
+              >Chưa có tài khoản?
+              <a href="sigin.html" class="text signup-link">Đăng ký</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript for login -->
+    <script src="assets/javascript/login.js"></script>
+  </body>
+</html>
+<!---->
