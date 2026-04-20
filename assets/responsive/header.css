@@ -1,0 +1,56 @@
+/* ------------------- Responsive header -------------------------- */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* PC low and Tablet */
+@media screen and (max-width: 1024px) {
+  #header {
+    display: none;
+    position: fixed;
+  }
+  #header.open {
+    display: block;
+    z-index: 9999;
+  }
+  #header.open .header__element {
+    left: 0px;
+    animation: modalFadeIn ease-in 0.3s;
+    background: #fff;
+    box-shadow: 0 0 10px #888;
+  }
+  #header.open .header__close {
+    display: block;
+  }
+  #content {
+    width: 100%;
+    margin-top: 66px;
+    padding-left: 0;
+  }
+
+  #header__responsive {
+    display: flex;
+  }
+}
+
+/* Moblie */
+@media screen and (max-width: 739px) {
+  #header.open {
+    width: 100vw;
+  }
+  #header.open .header__element {
+    width: 100%;
+    background: #fff;
+    left: 0;
+    animation: modalFadeIn ease-in 0.3s;
+  }
+  .header__nav-list li a {
+    text-align: center;
+  }
+}
